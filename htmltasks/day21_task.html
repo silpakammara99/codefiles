@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-image:linear-gradient(blue,deeppink);
+        height:98vh;
+        position: relative;
+    }
+    fieldset{
+        height:55vh;
+        width:40vw;
+        position: absolute;
+        top:15vh;
+        bottom:-40vh;
+        left:29vw;
+    }
+    [type=email]{
+        margin-left:5vw;
+        border:2px solid;
+    }
+[type="tel"]{
+    margin-left:5vw;
+    border:2px solid;
+}
+button{
+    border:2px solid black;
+    height:4vh;
+    width:10vw;
+    margin-top:5vh;
+    margin-left: 16vw;
+    background-color:cyan;
+}
+</style>
+</head>
+<body>
+    <fieldset>
+        <legend style="font-size:20px">Job registration form</legend>
+        <form>
+            <h2 style="margin-left:17vw;">As fresher</h2>
+            <input type="text" placeholder="First Name" style="border:2px solid; margin-left:5vw;">
+            <input type="email" placeholder="Email"><br><br>
+            <input type="text" placeholder="Last Name" style="border:2px solid; margin-left:5vw;">
+            <input type="tel" placeholder="Phone no"><br><br>
+            <input type="password" placeholder="Password" style="border:2px solid; margin-left:5vw;">
+            <label for="Questions" style="margin-left:5vw;" ></label>
+           <select name="questions">
+            <option value="questions" placeholder="select security questions">select security questions</option>
+            <option value="questions">what is yout school name</option>
+            <option value="questions">what is your favorite teacher name</option>
+            <option value="questions">What is favorite submit</option>
+            <option value="questions">What is your favorite food</option>
+        </select><br><br>
+        <input type="password" placeholder="Confirm password" style="border:2px solid; margin-left:5vw;">
+        <input type="text" placeholder="Enter your answer" style="margin-left:5vw; border:2px solid;"><br><br>
+        <input type="radio" name="gender" id="female" value="female" style="margin-left:5vw; margin-top:3vh;">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="others" value="Others">
+        <label for="others">Others</label><br><br>
+        <button>Register here</button>
+        </form>
+    </fieldset>
+</body>
+</html>
