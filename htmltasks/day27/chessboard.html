@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(8, 12vh);
+            justify-content: center;
+        }
+        article{
+            height: 12vh;
+            border:1px solid black;
+        }
+        section:nth-child(2n) article:nth-child(2n){
+            background-color:cadetblue
+        }
+        section:nth-child(2n+1) article:nth-child(2n+1){
+            background-color: cadetblue;
+        }
+        article:nth-child(2n+1){
+            background-color:rgb(209, 209, 205);
+        }
+        article:nth-child(2n){
+            background-color: rgb(208, 208, 203);
+        }
+        span{
+            height: 12vh
+        }
+        .piece{
+            font-size: 50px;
+            display: grid;
+            place-items: center;
+            color:black;
+        }
+        span:hover{
+            background-color:burlywood;
+            height: 200px;
+        }
+       
+</style>
+</head>
+<body>
+    <main>
+        <section>
+       <article><span class="piece">♜</span></article>
+       <article><span class="piece">♙</span></article>
+       <article></article>
+       <article></article>
+       <article></article>
+       <article></article>
+       <article><span class="piece">♙</span></article>
+       <article><span class="piece">♜</span></article>
+    </section>
+    <section>
+        <article><span class="piece">♞</span></article>
+        <article><span class="piece">♙</span></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article><span class="piece">♙</span></article>
+        <article><span class="piece">♞</span></article>
+    </section>
+     <section>
+        <article><span class="piece">♗</span></article>
+        <article><span class="piece">♙</span></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article><span class="piece">♙</span></article>
+        <article><span class="piece">♝</span></article>
+    </section>
+     <section>
+        <article><span class="piece">♕</span></article>
+        <article><span class="piece">♙</span></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article><span class="piece">♙</span></article>
+        <article><span class="piece">♛</span></article>
+    </section>
+     <section>
+        <article><span class="piece">♔</span></article>
+        <article><span class="piece">♙</span></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article><span class="piece">♙</span></article>
+        <article><span class="piece">♚</span></article>
+    </section>
+     <section>
+        <article><span class="piece">♗</span></article>
+        <article><span class="piece">♙</span></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article><span class="piece">♙</span></article>
+        <article><span class="piece">♝</span></article>
+    </section>
+     <section>
+        <article><span class="piece">♞</span></article>
+        <article><span class="piece">♙</span></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article><span class="piece">♙</span></article>
+        <article><span class="piece">♞</span></article>
+    </section>
+     <section>
+        <article><span class="piece">♜</span></article>
+        <article><span class="piece">♙</span></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article><span class="piece">♙</span></article>
+        <article><span class="piece">♜</span></article>
+     </section>
+    </main>
+</body>
+</html>

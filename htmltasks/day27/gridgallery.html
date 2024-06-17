@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            
+            border:1px solid black;
+            border:hidden;
+            display: grid;
+            grid-template-columns: repeat(3,150px);
+            grid-template-rows: repeat(3,150px);
+            text-align: center;
+            gap:10px;
+            justify-content: center;
+        }
+        img{
+            margin-top: 20px;
+            border:1px solid black;
+            height:150px;
+            width:150px;
+            background-size: cover;
+        }
+        div img:hover{
+            opacity: 0.4;
+        }
+        @media screen and (min-width:320px) and (max-width:520px) {
+            main{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            img{
+                height:100%;
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        
+        <div><img src="../mulmedia.html/1.jpg"></div>
+        <div><img src="../mulmedia.html/2.jpg"></div>
+        <div><img src="../mulmedia.html/3.jpg"></div>
+        <div><img src="../mulmedia.html/4.jpg"></div>
+        <div><img src="../mulmedia.html/5.jpg"></div>
+        <div><img src="../mulmedia.html/6.jpg"></div>
+        <div><img src="../mulmedia.html/7.jpg"></div>
+        <div><img src="../mulmedia.html/8.jpg"></div>
+        <div><img src="../mulmedia.html/pic9.jpg"></div>
+    </main>
+</body>
+</html>

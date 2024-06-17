@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @media screen and (min-width:320px) and (max-width:550px)
+        {
+            body{
+                display:flex;
+                justify-content: center;
+            }
+            main{
+                border:1px solid black;
+                width:50vw;
+                display:list-item;
+                overflow-y: scroll;
+            }
+            .one{
+                height:60vh;
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                align-items: center;
+            }
+            img{
+                width:45vw;
+                height:20vh;
+                position: relative;
+                top:50px;
+                border-image: auto;
+
+            }
+            p{
+                /* position: fixed;
+                top: -1px;
+                left:500px;*/
+                width:50vw;
+                font-size: 2vmin;
+                z-index: 2;
+        }
+        nav{
+            border:1px solid black;
+            border:hidden;
+            height: 5vh;
+            width:50vw;
+            background-color: pink;
+            position: fixed;
+            z-index: 1;
+        }
+    }
+     @media screen and (min-width:550px)
+     {
+        main{
+            height:10%;
+            width:100%;
+            border:1px solid black;
+        }
+        img{
+            height:25vh;
+            width:15vw;
+        }
+        nav{
+            margin-top: -2.2%;
+            height:3%;
+            width:100%;
+            border: 1px solid black;
+            border:hidden;
+            background-color: blanchedalmond;
+            padding:0;
+        }
+        .one{
+            display: flex;
+            gap:50px;
+            flex-wrap: wrap;
+             justify-content: center;
+        }
+        p{
+            font-size: 4vmin;
+        }
+     }
+     @media screen and (max-width:319px){
+        body{
+            display:none;
+            
+        }
+        
+     }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+        <p style="text-align: center;">Flowers images</p>
+    </nav>
+        <div class="one">
+            <img src="../mulmedia.html/4.jpg">
+            <img src="../mulmedia.html/5.jpg" >
+            <img src="../mulmedia.html/6.jpg">
+            <img src="../mulmedia.html/11.jpeg">
+            <img src="../mulmedia.html/2.jpg">
+            <img src="../mulmedia.html/7.jpg">
+            <img src="../mulmedia.html/1.jpg">
+            <img src="../mulmedia.html/3.jpg">
+        </div>
+    </main>
+</body>
+</html>

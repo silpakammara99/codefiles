@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+             display: grid;
+             grid-template-columns: repeat(3,100px);
+             grid-template-rows: repeat(3,100px);
+             gap:5px;
+             justify-content: center;
+       }
+       article{
+        background-color: navy;
+        color:black;
+       }
+       .e{
+        grid-area:2/2/4/4;
+        background-color: pink;
+       }
+       .a{
+        background-color: green;
+       }
+       .b{
+        background-color: violet;
+       }
+       .c{
+        background-color: red;
+       }
+       .f{
+        background-color: aqua;
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <article class="a">1</article>
+        <article class="b">2</article>
+        <article class="c">3</article>
+        <article class="d">4</article>
+        <article class="e">5</article>
+        <article class="f">6</article>
+       
+    </div>
+</body>
+</html>

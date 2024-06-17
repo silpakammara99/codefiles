@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: beige;
+            display: grid;
+            grid-template-columns: repeat(4,200px);
+            grid-template-rows: repeat(3,150px);
+            gap:10px;
+            justify-content: center;
+        }
+        section{
+            background-color: blue;
+        }
+        .a{
+            grid-row-start: 1;
+            grid-row-end: 4;
+            background-color:cadetblue;
+        } 
+        .b{
+            grid-column:2/4;
+            background-color: chartreuse;
+        }
+        .f{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 4;
+            background-color: brown;
+        }
+        .c, .d, .e, .g, .h{
+            background-color: fuchsia;
+        }   
+    </style>
+</head>
+<body>
+    <div>
+        <section class="a">a</section>
+        <section class="b">b</section>
+        <section class="c">c</section>
+        <section class="d">d</section>
+        <section class="e">e</section>
+        <section class="f">f</section>
+        <section class="g">g</section>
+        <section class="h">h</section>
+    </div>
+</body>
+</html>
