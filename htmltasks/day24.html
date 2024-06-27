@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color: black;
+            color:rgb(165, 152, 152);
+            font-family:"Montserrat", sans-serif;
+        }
+        .navbar{
+            width: 100px;
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            /*width:9vw;
+            height: 110vh;*/
+            position: fixed;
+            top:0%;
+            left:0%;
+            background-color: rgb(22, 21, 21);
+        }
+    
+        a{
+            height: 13%;
+            width: 100%;
+            font-size: 220%;
+            color:white;
+            text-decoration: none;
+            margin-top: -14%;
+            text-align: center;
+        }
+        p{
+            font-size: 35%;
+            margin-top: 10%; 
+        }
+        i{
+            margin-top: 20%;
+        }
+        .navbar a:hover{
+              background-color: black;
+        }
+        div{
+            border:1px solid black;
+            width:55vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left:25%;
+        }
+        .p{
+            font-size: 340%;
+            margin-top: 1%;  
+            text-align: center;        
+        }
+        .p1{
+            margin-top: -3%;
+            margin-left: 35%;
+        }
+        .p2{
+            font-size: 180%;
+            font-style:inherit;
+            margin-top: 3%;
+        }
+         hr{
+            color:black;
+            width: 30%;
+            margin: 0;
+            margin-top: -2%;
+        }
+        .p3{
+            font-size: 85%;
+            margin-top: 2%;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .p4{
+            font-size: 160%;
+            font-style:inherit;
+            margin-top: 2%;
+        }
+        .p5{
+            letter-spacing: 3px;
+            font-size: 83%;
+            margin-top: 1%;
+        }
+        .b1{
+            width:100%;
+            border: 1px solid black;
+            height: 3vh;
+            background-image: linear-gradient(to right, grey 90%,white 10%);
+        }
+        .b2{
+            width:100%;
+            border: 1px solid black;
+            height: 3vh;
+            background-image: linear-gradient(to right, grey 85%,white 15%);
+        }
+        .b3{
+            width:100%;
+            border: 1px solid black;
+            height: 3vh;
+            background-image: linear-gradient(to right, grey 75%,white 25%);
+        }
+        .bar{
+            border:1px solid white;
+            border:hidden;
+            background-color: white;
+            color:black;
+            margin-top:4%;
+            padding-top: 2%;
+        }
+        .p6{
+            font-size: 145%;
+            font-style:inherit;
+            margin-top: 5%;
+        }
+        .PHOTOS{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap:9px;
+        }
+        .box1, .box2{
+             
+              width:100%;
+              border:1px solid black;
+              background-color: whitesmoke;
+              color:black;
+              opacity: 0.4;
+        }
+        .a2, .a3{
+            border-radius: 50%;
+            height: 8%;
+            width: 8%;
+        }
+        .a3{
+            margin-top: 2%;
+        }
+        .p7{
+            font-size: 145%;
+            font-style:inherit;
+            margin-top: 13%;
+        }
+        .box1:hover{
+                opacity: 1;
+        }
+        .box2:hover{
+            opacity: 1;
+    }
+    #PHOTOS{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+       
+    }
+    .pic1{
+       width: 30%;   
+       margin-top: 2%;
+    }
+    .pic2{
+       width: 30%; 
+       margin-left:52%;
+       margin-top:-147.5%;
+    }
+    .p8{
+        font-size: 145%;
+        font-style:inherit;
+        margin-top: 5%;
+    }
+     footer{
+        margin-top: -8%;
+     }
+     @media screen and (min-width:320px) and (max-width:486px){
+         body{
+           
+            background-color: black;
+                color: rgb(165, 152, 152);
+                font-family: "Montserrat", sans-serif;
+                margin: 0;
+                padding: 0;
+            flex-direction: column;
+           
+        } 
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            background-color: rgb(22, 21, 21);
+            width: 50%;
+            z-index: 1; /* Ensure nav is above content */
+        }
+    
+        .navbar img {
+            display: none;
+            width: 40vw;
+            height: auto;
+        }
+    
+        .navbar a {
+            display: block;
+            padding: 5px;
+            margin-top: 15px;
+            font-size: 40px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+    
+        .navbar a:hover {
+            background-color: #333;
+        }
+
+        
+        .fa-solid, .fa-regular{
+            display: none;
+        }
+        
+        .h{
+            margin-left: 78%;
+            margin-top:14%;
+        }
+        .a{
+            margin-left:-29%;
+            margin-top:26%;
+           
+        }
+        .b{
+            margin-left:25%;
+            margin-top:38%;
+
+        }
+        .c{
+            margin-left:80%;
+            margin-top:50%;
+           
+        }
+        div{
+            border:1px solid black;
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left:0%;
+            margin-right: 20%;
+            margin-top:5%;
+            position: absolute; 
+        }
+        .p{
+            font-size: 40px;
+            margin-top: 15%;  
+        }  
+        .p1{
+            margin-top: -3%;
+            margin-left:3% ;
+            text-align:  center;  
+        }
+        .PHOTOS{
+            text-align: center;
+        }
+        .box1{
+            width:100%;
+            height: 0%;
+            opacity: 0.4;
+        } 
+        .box2{
+            width: 100%;
+            margin-top: 110%;
+            margin-left: -99%;
+            opacity: 0.4;
+        }
+        .box1:hover{
+            opacity: 1;
+    }
+    .box2:hover{
+        opacity: 1;
+               }
+        .on1, .on2{
+               margin-right: 35%;
+        }
+        .a2, .a3{
+            border-radius: 50%;
+            height: 25%;
+            width: 25%;
+        }
+        .rep1, .rep2{
+            padding-top: 40px;
+            padding-left: -3%;
+        }
+        .pic1{
+            width:62%;
+        }
+        .pic2{
+            width:62%;
+            margin-left:0% ;
+            margin-top: 30%;
+        }
+        .bar div{
+            display: flex;
+            flex-direction: row;
+            margin-left:-50%;
+        }
+        .z1{
+            text-align: left;
+            margin-right:85%;
+            font-size: 10px;
+            text-align: center;
+        }
+        .z2{
+            text-align: left;
+            margin-right:45%;
+            font-size: 10px;
+            text-align: center;
+        }
+        .z3{
+            text-align: left;
+            margin-right:-10%;
+            font-size: 10px;
+            text-align: center;
+        }
+        .z4{
+            text-align: left;
+            margin-right:-65%;
+            font-size: 10px;
+            text-align: center;
+        }
+        .bar{
+            width: 100%;
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" style=" width:100%;"><br>
+        <a href="#"><i class="fa-solid fa-house-chimney"></i><p>HOME</p></a>
+        <a href="#ABOUT"><i class="fa-solid fa-user"></i><p>ABOUT</p></a>
+        <a href="#PHOTOS"><i class="fa-solid fa-eye"></i><p>PHOTOS</p></a>
+        <a href="#CONTACT"><i class="fa-regular fa-envelope"></i><p>CONTACT</p></a>
+    </nav>
+    <div>
+   <p class="p">I'm John Doe.</p>
+   <p class="p1" style="font-size:100%;">Photographer and Web Designer.</p>
+   <img id="a1" src="https://www.w3schools.com/w3images/man_smoke.jpg" style="background-size: cover; height:40%; width:100">
+   <p class="p2">My Name</p>
+   <hr style="color: black; width:30;">
+   <p class="p3">Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+   <section id="ABOUT"><p class="p4">My Skills</p>
+  <p class="p5">Photography</p>
+  <article class="b1"></article>
+  <p class="p5">Web Design</p>
+  <article class="b2"></article>
+  <p class="p5">Photoshop</p>
+  <article class="b3"></article>
+  <section class="bar">
+ <pre>
+           11+                     55+                         89+                     150+
+        Partners              Projects Done               Happy Clients              Meetings
+    </pre>
+</section>
+    <button style="width:160px; height:5%; background-color:white;color:black; margin-top:2%; border:hidden; "><i class="fa-solid fa-download"></i>Download Resume</button>
+    <p class="p6">My Price</p>
+</section>
+<article class="PHOTOS">
+    <section class="box1">
+        <p style="background-color: grey; height:13%; width:100%; font-size:130%;margin-top:0%; padding-top:7%; text-align:center;">Basic</p>
+        <p style="font-size:100%;text-align:center;margin-top:4%;">Web Design</p>
+        <hr style="width:100%; text-align:center;">
+        <p style="font-size:100%;text-align:center;margin-top:4%;">Photography</p>
+         <hr style="width:100%; text-align:center;">
+         <p style="font-size:100%;text-align:center;margin-top:4%;">5GB Storage</p>
+         <hr style="width:100%; text-align:center;">
+         <p style="font-size:100%;text-align:center;margin-top:4%;">Mail Support</p>
+         <hr style="width:100%; text-align:center;">
+         <p style="font-size:120%;text-align:center;margin-top:4%;">$ 10<br><br><span style="opacity:0.5; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">per month</span></p>
+         <hr style="width:100%; text-align:center;">
+         <button style="text-align:center; margin-top:6%; margin-left:45%;width:18%; background-color:white;">sign up</button>
+    </section>
+    <section class="box2">
+    <p style="background-color: grey; height:13%; width:100%; font-size:130%;margin-top:0%; padding-top:7%; text-align:center;">Pro</p>
+        <p style="font-size:100%;text-align:center;margin-top:4%;">Web Design</p>
+        <hr style="width:100%; text-align:center;">
+        <p style="font-size:100%;text-align:center;margin-top:4%;">Photography</p>
+         <hr style="width:100%; text-align:center;">
+         <p style="font-size:100%;text-align:center;margin-top:4%;">50GB Storage</p>
+         <hr style="width:100%; text-align:center;">
+         <p style="font-size:100%;text-align:center;margin-top:4%;">Endless Support</p>
+         <hr style="width:100%; text-align:center;">
+         <p style="font-size:120%;text-align:center;margin-top:4%;">$ 25<br><br><span style="opacity:0.5; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">per month</span></p>
+         <hr style="width:100%; text-align:center;">
+         <button style="text-align:center; margin-top:6%; margin-left:45%;width:18%; background-color:white;">sign up</button>
+        </section>
+        </article>
+        <p style="font-size: 145%;">My Reputation</p>
+        <img class="a2" src="https://www.w3schools.com/w3images/bandmember.jpg"><span style="margin-left: 10%; margin-top:-7%; font-family:sans-serif;">Chris Fox. CEO at Mighty Schools.<br><br>John Doe saved us from a web disaster.</span>
+        <img class="a3" src="https://www.w3schools.com/w3images/avatar_g2.jpg"><span style="margin-left: 10%; margin-top:-7%;font-family:sans-serif;">Rebecca Flex. CEO at Company.<br><br>No one is better than John Doe.</span>
+        <section id="PHOTOS">
+        <p class="p7">My Photos</p>
+        <hr>
+        <section class="picbox">
+            <p class="pic1">
+                <img src="https://www.w3schools.com/w3images/wedding.jpg" style="height:70%; width:163%">
+                <img src="https://www.w3schools.com/w3images/rocks.jpg" style="height:74%; width:163%">
+                <img src="https://www.w3schools.com/w3images/sailboat.jpg" style="height:70%; width:163%">
+            </p>
+            <p class="pic2">
+                <img src="https://www.w3schools.com/w3images/underwater.jpg" style="height:45%; width:160%">
+                <img src="https://www.w3schools.com/w3images/chef.jpg" style="height:60%; width:160%">
+                <img src="https://www.w3schools.com/w3images/wedding.jpg" style="height:60%; width:160%">
+                <img src="https://www.w3schools.com/w3images/p6.jpg" style="height:60%; width:160%">
+            </p>
+        </section>
+       <section id="CONTACT">
+        <p class="p8">Contact Me</p>
+        <hr>
+        <i class="fa-solid fa-location-dot fa-xl" style="margin-top: 4%;"></i><span style="margin-left:2%;font-size:90%">Chicago, US</span><br>
+        <i class="fa-solid fa-phone fa-xl" style="margin-top: 4%;"></i><span style="margin-left:2% ;font-size:90%">Phone: +00 151515</span><br>
+        <i class="fa-regular fa-envelope fa-xl" style="margin-top: 4%;"></i><span style="margin-left:2% ;font-size:90%">Email: mail@mail.com</span>
+        <p style="margin-top: 5%; font-size:90%;">Let's get in touch. Send me a message:</p>
+        <input type="text" id="Name" required placeholder="Name"  style="width:99%; height:45px;">
+        <input type="email" id="email" placeholder="E-mail" style="width:99%; height:45px;">
+        <input type="text" id="Subject" placeholder="Subject" style="width:99%; height:45px;">
+        <input type="text" id="message" placeholder="Message" style="width:99%; height:45px;">
+        <input type="submit" value="send message" style="height: 40px; width:140px; margin-top:2%;">
+        <footer>
+        <i class="fa-brands fa-facebook fa-lg"></i>
+        <i class="fa-brands fa-instagram fa-lg"></i>
+        <i class="fa-brands fa-snapchat fa-lg"></i>
+        <i class="fa-brands fa-pinterest-p fa-lg"></i>
+        <i class="fa-brands fa-twitter fa-lg"></i>
+        <i class="fa-brands fa-linkedin fa-lg"></i>
+        <p style="font-size: 100%;">Powered by <a href="w3schools.com" style="color:rgb(238, 235, 235); font-size:90%">W3.css</a></p>
+       
+        </footer>
+
+    </section>
+</div>
+ 
+</body>
+</html>
+</html>

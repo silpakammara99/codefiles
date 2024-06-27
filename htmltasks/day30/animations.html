@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+       
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 100px;
+            align-items: center;
+            height: 100vh;  
+            background-color:aliceblue;
+          }
+          
+          .bouncing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: burlywood;
+              width:40%;
+              height:93vh;
+          }
+          
+          .ball {
+            width: 40px;
+            height: 40px;
+            background-color: blue;
+            border-radius: 50%;
+            margin: 0 10px;
+            animation: bounce 1s infinite ease-in-out alternate;
+          }
+          
+          .ball:nth-child(2) {
+            animation-delay: 0.1s;
+          }
+          
+          .ball:nth-child(3) {
+            animation-delay: 0.2s;
+          }
+          .ball:nth-child(4) {
+            animation-delay: 0.3s;
+          }
+          .ball:nth-child(5) {
+            animation-delay: 0.4s;
+          }
+          
+          .ball:nth-child(6) {
+            animation-delay: 0.5s;
+          }
+          .ball:nth-child(7) {
+            animation-delay: 0.6s;
+          } 
+          .ball:nth-child(8) {
+            animation-delay: 0.7s;
+          }
+          
+          
+          @keyframes bounce {
+            0% {
+              transform: translateY(150px);
+            }
+            100% {
+              transform: translateY(-190px);
+            }
+          }
+          
+       .loader{
+        width:40%;
+        height:93vh;
+        background-color: aquamarine;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;  
+       justify-content: center;
+       align-items: center;
+        column-gap: 5px;
+      
+       }
+       .dot{
+        height: 30px;
+        width: 30px;
+        background-color: green;
+        border-radius: 100%;
+        
+        animation: loads 2s infinite ease-in-out alternate;
+       }
+       .dot{
+        transition: width 2s ;
+       }
+       
+       @keyframes loads{
+        0%{
+            transform: scale(0px,20px);
+            background-color:black;
+        }
+      25%{
+            transform: scale(20px,40px);
+            background-color: blueviolet;
+        }
+        50%{
+          transform: scale(40px,60px);
+          background-color: rgb(43, 226, 150);
+      }
+      75%{
+        transform: scale(60px,80px);
+        background-color: rgb(226, 107, 43);
+    }
+    100%{
+      transform: scale(80px,100px);
+      background-color: rgb(43, 208, 226);
+  }
+       }
+       
+       .dot:nth-child(2){
+       animation-delay: 0.2s;
+       }
+       .dot:nth-child(3){
+        animation-delay: 0.3s;
+        }
+
+        .dot:nth-child(4){
+          animation-delay: 0.4s;
+          }
+          .dot:nth-child(5){
+            animation-delay: 0.5s;
+            }
+    </Style>
+</head>
+<body>
+
+  <div class="bouncing"> <p style="margin-top:-85vh">Bouncing balls</p>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+    <div class="ball"></div>
+  </div>
+  <div class="loader"><p style="margin-top:-85vh">Loading with colors</p>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</body>
+</html>
